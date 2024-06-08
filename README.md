@@ -51,7 +51,7 @@ Bill Gemini Chat Application/
 ├── scripts.js           # File JavaScript xử lý logic
 ├── README.md            # File hướng dẫn sử dụng
 └── index.html           # Trang chính của ứng dụng
-
+plaintext```
 
 ## Các công nghệ sử dụng
 
@@ -71,10 +71,10 @@ Bill Gemini Chat Application/
 
 Cảm ơn bạn đã sử dụng Bocchi The Rock Gemini Chat Bot! Hãy thưởng thức và chia sẻ với bạn bè!
 
-<p align="center">
-  <strong>Bill The Dev</strong>
+<p style="text-align: center; font-size: 2em; font-weight: bold; color: #FFA500; text-shadow: 2px 2px 4px #555555, 4px 4px 8px #AAAAAA;">
+  Bill The Dev
 </p>
 
-<p align="center">
-  <img src="hitori.png" alt="Hitori" style="max-width: 100%;">
+<p style="text-align: center;">
+  <img src="hitori.png" alt="Hitori" >
 </p>
