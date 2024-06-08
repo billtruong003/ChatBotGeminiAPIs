@@ -1,6 +1,6 @@
 # Bill Gemini Chat Application
 
-![Bill Gemini Logo](rem.png)
+![Bill Gemini Logo](rem.jpg)
 
 ## Giới thiệu
 
