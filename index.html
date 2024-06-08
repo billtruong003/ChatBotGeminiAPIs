@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Gemini</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        body {
+            background-image: url('hitori.png');
+            background-size: cover;
+            background-position: center;
+            background-color: #f0f0f0;
+            background-position-x: -300px;
+        }
+
+        .momo-icon {
+            font-size: 24px;
+            /* Kích thước biểu tượng */
+            color: #ffffff;
+            /* Màu của biểu tượng Momo */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1><i class="fas fa-comments"></i> Bocchi The Rock Gemini </h1>
+        </div>
+        <div id="messages" class="chat-messages">
+            <div class="message bot-message">
+                <div class="message-bubble">Hi, I'm Bill The Dev, a Passionate Game Developer. Buy me a coffee <i
+                        class="fa fa-coffee" aria-hidden="true" style="color: rgb(142, 110, 61);"></i>
+                    <img src="momo.jpg" alt="" style="max-width: 300px;">
+                </div>
+            </div>
+            <div class="message user-message">
+                <div class="message-bubble user-bubble" style="padding: 0px 20px;">
+
+                    This project utilizes the Gemini API, and I created it while expanding my knowledge of web APIs.
+                    Don't hesitate to use it however you see fit.
+                </div>
+            </div>
+            <div class="message user-message">
+                <div class="message-bubble user-bubble" style="padding: 0px 20px;">
+                    My name is Bill The Dev! I'm a young passionate Vtuber, Game Programmer
+                    Watch more on my <a href="https://www.youtube.com/channel/UCdRe_4FG7JhOERlfcyeNhnw"
+                        class="custom-button youtube"><i class="fab fa-youtube"></i> Youtube</a>
+                    Contacts me on my <a href="https://www.youtube.com/channel/UCdRe_4FG7JhOERlfcyeNhnw"
+                        class="custom-button facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    Check for more products at my <a href="https://www.youtube.com/channel/UCdRe_4FG7JhOERlfcyeNhnw"
+                        class="custom-button github"><i class="fab fa-github"></i> Github</a>
+                    Contact me through Linkedin <a href="https://www.youtube.com/channel/UCdRe_4FG7JhOERlfcyeNhnw"
+                        class="custom-button linkedin"><i class="fab fa-linkedin-in"></i> Linkedin</a>
+                    Check Me On skype <a href="https://www.youtube.com/channel/UCdRe_4FG7JhOERlfcyeNhnw"
+                        class="custom-button skype"><i class="fab fa-skype"></i> Skype</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Nhập tin nhắn của bạn...">
+            <button id="send-button">Gửi</button>
+
+        </div>
+        <!-- <div class="file-input">
+                <input type="file" id="file-input" accept="image/*,video/*,audio/*">
+                <button id="upload-button"><i class="fas fa-upload"></i></button>
+            </div>
+            <div class="audio-input">
+                <button id="record-button"><i class="fas fa-microphone"></i></button>
+            </div> -->
+
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

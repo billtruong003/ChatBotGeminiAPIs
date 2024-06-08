@@ -1,0 +1,466 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 85vh;
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.chat-header {
+    background-color: #ff91a3;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background: #232323;
+}
+
+.chat-messages .message {
+    margin-bottom: 15px;
+}
+
+.chat-messages .message.user-message {
+    text-align: right;
+    margin-left: auto;
+}
+
+.chat-messages .message.bot-message {
+    text-align: left;
+    margin-right: auto;
+}
+
+.chat-messages .message .message-bubble {
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    display: inline-block;
+    max-width: 60%;
+    line-height: 1.5;
+    word-wrap: break-word;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.chat-messages .message .message-bubble.user-bubble {
+    background-color: #ff91a3;
+    color: #fff;
+}
+
+.chat-input,
+.file-input,
+.audio-input {
+    background-color: #1e1e1e;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #333;
+}
+
+.chat-input input[type="text"] {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.chat-input button,
+.file-input button,
+.audio-input button {
+    padding: 15px 20px;
+    background-color: #ff91a3;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat-input button:hover,
+.file-input button:hover,
+.audio-input button:hover {
+    background-color: #e07b3d;
+}
+
+/* Texting animation */
+@keyframes blinking {
+    0% {
+        opacity: 0.2;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}
+
+.texting {
+    font-size: 1.5rem;
+    color: #ff91a3;
+    font-weight: bold;
+    animation: blinking 1.5s infinite;
+}
+
+/* Animations */
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.chat-messages .message.user-message {
+    animation: slideInFromRight 0.5s ease;
+}
+
+.chat-messages .message.bot-message {
+    animation: slideInFromLeft 0.5s ease;
+}
+
+/* Scrollbar styling */
+.chat-messages::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+    background-color: #ff91a3;
+    border-radius: 4px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+    background-color: #333;
+}
+
+.file-input {
+    margin-top: 10px;
+}
+
+.file-input input[type="file"] {
+    display: none;
+}
+
+.file-input button {
+    margin-right: 10px;
+}
+
+.audio-input {
+    margin-top: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .chat-container {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .chat-header h1 {
+        font-size: 1.5em;
+    }
+
+    .chat-input input[type="text"] {
+        padding: 10px;
+    }
+
+    .chat-input button {
+        padding: 10px 20px;
+    }
+
+    .chat-messages {
+        padding: 15px;
+    }
+
+    .chat-messages .message .message-bubble {
+        padding: 10px;
+    }
+}
+
+/* Enhanced styles for images, videos, and audio */
+.message img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.message video {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+    outline: none;
+}
+
+.message audio {
+    width: 100%;
+    margin-top: 10px;
+    outline: none;
+}
+
+/* Styling buttons for upload and record */
+.file-input button,
+.audio-input button {
+    background: #ff91a3;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.file-input button:hover,
+.audio-input button:hover {
+    background: #e07b3d;
+}
+
+.file-input button i,
+.audio-input button i {
+    margin-right: 5px;
+}
+
+/* Special styles for file inputs */
+input[type="file"] {
+    display: none;
+}
+
+.file-label {
+    padding: 10px 15px;
+    background-color: #ff91a3;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.file-label:hover {
+    background-color: #e07b3d;
+}
+
+/* Loader for 'texting' effect */
+.loader {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 15px auto;
+    position: relative;
+}
+
+.loader div {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #ff91a3;
+    margin: 8px;
+    animation: loader 1.2s infinite ease-in-out;
+}
+
+.loader div:nth-child(1) {
+    animation-delay: -0.24s;
+}
+
+.loader div:nth-child(2) {
+    animation-delay: -0.12s;
+}
+
+@keyframes loader {
+
+    0%,
+    100% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+/* Bubble alignment and text wrapping */
+.chat-messages .message .message-bubble {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    max-width: 100%;
+}
+
+/* Styling for copied text button */
+.copy-button {
+    margin-top: 10px;
+    background-color: #ff91a3;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.copy-button:hover {
+    background-color: #e07b3d;
+}
+
+/* Tooltip styles */
+.copy-button-tooltip {
+    position: absolute;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 0.8rem;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.copy-button:hover .copy-button-tooltip {
+    display: block;
+}
+
+/* Extra padding for better user interaction */
+.chat-input input[type="text"],
+.chat-input button,
+.file-input button,
+.audio-input button {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Extended scrolling animation */
+.chat-messages {
+    scroll-behavior: smooth;
+}
+
+/* Styling for messages containing code */
+.message pre {
+    background-color: #272727;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow-x: auto;
+}
+
+/* Custom button styles */
+.custom-button {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* YouTube button */
+.custom-button.youtube {
+    background: linear-gradient(to right, #FF0000, #CC0000);
+    border: 1px solid #FF0000;
+}
+
+.custom-button.youtube:hover {
+    background: linear-gradient(to right, #E60000, #B80000);
+}
+
+/* Facebook button */
+.custom-button.facebook {
+    background: linear-gradient(to right, #3b5998, #8b9dc3);
+    border: 1px solid #3b5998;
+}
+
+.custom-button.facebook:hover {
+    background: linear-gradient(to right, #2a4887, #7a8db2);
+}
+
+/* GitHub button */
+.custom-button.github {
+    background: linear-gradient(to right, #333333, #666666);
+    border: 1px solid #333333;
+}
+
+.custom-button.github:hover {
+    background: linear-gradient(to right, #222222, #555555);
+}
+
+/* LinkedIn button */
+.custom-button.linkedin {
+    background: linear-gradient(to right, #0077B5, #00a0dc);
+    border: 1px solid #0077B5;
+}
+
+.custom-button.linkedin:hover {
+    background: linear-gradient(to right, #006298, #008bc5);
+}
+
+/* Skype button */
+.custom-button.skype {
+    background: linear-gradient(to right, #00AFF0, #007AB8);
+    border: 1px solid #00AFF0;
+}
+
+.custom-button.skype:hover {
+    background: linear-gradient(to right, #0099D9, #005B8C);
+}
