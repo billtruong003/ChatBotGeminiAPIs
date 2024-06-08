@@ -42,7 +42,6 @@ Bill Gemini là một ứng dụng chat được phát triển bởi Bill The De
 
 ## Cấu trúc dự án
 
-```plaintext
 Bill Gemini Chat Application/
 │
 ├── hitori.png           # Hình nền của ứng dụng
@@ -51,7 +50,7 @@ Bill Gemini Chat Application/
 ├── scripts.js           # File JavaScript xử lý logic
 ├── README.md            # File hướng dẫn sử dụng
 └── index.html           # Trang chính của ứng dụng
-plaintext```
+
 
 ## Các công nghệ sử dụng
 
