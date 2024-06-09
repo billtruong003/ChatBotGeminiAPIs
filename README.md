@@ -41,7 +41,7 @@ Bill Gemini is a chat application developed by Bill The Dev, a passionate progra
 3. Enhance your message content with icons and markdown for a richer experience.
 
 ## Project Structure
-
+```plaintext
 Bill Gemini Chat Application/
 │
 ├── hitori.png # Background image for the application
@@ -50,7 +50,7 @@ Bill Gemini Chat Application/
 ├── scripts.js # JavaScript file for handling logic
 ├── README.md # Usage guide
 └── index.html # Main application page
-
+```
 
 ## Technologies Used
 
