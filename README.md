@@ -1,79 +1,79 @@
 # Bill Gemini Chat Application
 
-![Bill Gemini Logo](rem.jpg)
+![Bill Gemini Logo](billGemini.png)
 
-## Giới thiệu
+## Introduction
 
-Bill Gemini là một ứng dụng chat được phát triển bởi Bill The Dev, một lập trình viên đam mê game và công nghệ web. Dự án này sử dụng Gemini API và được phát triển với mục tiêu mở rộng kiến thức về web APIs và tích hợp các công nghệ hiện đại như Markdown và các biểu tượng từ FontAwesome.
+Bill Gemini is a chat application developed by Bill The Dev, a passionate programmer with a love for games and web technologies. This project leverages the Gemini API and aims to expand knowledge in web APIs and the integration of modern technologies like Markdown and FontAwesome icons.
 
-## Chức năng chính
+## Key Features
 
-- **Gửi tin nhắn văn bản**: Hỗ trợ gửi và nhận tin nhắn giữa người dùng và bot.
-- **Markdown**: Tích hợp khả năng xử lý Markdown để hiển thị nội dung phong phú, bao gồm liên kết, hình ảnh, và mã code.
-- **Upload tệp và ghi âm**: Cho phép người dùng tải lên các tệp hình ảnh, video, và ghi âm trực tiếp từ trình duyệt.
-- **Tích hợp API**: Sử dụng Gemini API để tạo và quản lý nội dung trò chuyện một cách hiệu quả.
+- **Text Messaging**: Supports sending and receiving messages between users and bots.
+- **Markdown Support**: Integrated Markdown processing to display rich content, including links, images, and code snippets.
+- **File Upload and Audio Recording**: Allows users to upload image and video files, and record audio directly from the browser.
+- **API Integration**: Uses Gemini API to create and manage chat content efficiently.
 
-## Cách cài đặt và sử dụng
+## Installation and Usage
 
-### Yêu cầu
+### Requirements
 
-- Trình duyệt hỗ trợ HTML5 và JavaScript.
-- Kết nối Internet để sử dụng API và tải các thư viện.
+- A browser supporting HTML5 and JavaScript.
+- An internet connection to use the API and load libraries.
 
-### Hướng dẫn cài đặt
+### Installation Guide
 
-1. Clone repository về máy của bạn:
+1. Clone the repository to your local machine:
     ```bash
     git clone https://github.com/username/bill-gemini-chat.git
     ```
 
-2. Mở file `index.html` trong trình duyệt yêu thích của bạn:
+2. Open the `index.html` file in your preferred browser:
     ```plaintext
     open index.html
     ```
 
-3. Thực hiện cấu hình API nếu cần thiết bằng cách chỉnh sửa các đường dẫn API trong file `scripts.js`.
+3. Configure the API if necessary by editing the API paths in the `scripts.js` file.
 
-### Cách sử dụng
+### Usage Instructions
 
-1. Nhập tin nhắn vào ô nhập liệu và nhấn "Gửi" để gửi tin nhắn.
-2. Sử dụng các tính năng upload tệp để tải lên hình ảnh, video, hoặc ghi âm.
-3. Sử dụng các biểu tượng và markdown để làm phong phú thêm nội dung tin nhắn của bạn.
+1. Enter your message in the input field and press "Send" to send the message.
+2. Use the file upload feature to upload images, videos, or audio recordings.
+3. Enhance your message content with icons and markdown for a richer experience.
 
-## Cấu trúc dự án
+## Project Structure
 
 Bill Gemini Chat Application/
 │
-├── hitori.png           # Hình nền của ứng dụng
-├── momo.jpg             # Biểu tượng Momo để trang trí
-├── styles.css           # File CSS cho giao diện
-├── scripts.js           # File JavaScript xử lý logic
-├── README.md            # File hướng dẫn sử dụng
-└── index.html           # Trang chính của ứng dụng
+├── hitori.png # Background image for the application
+├── momo.jpg # Momo icon for decoration
+├── styles.css # CSS file for styling
+├── scripts.js # JavaScript file for handling logic
+├── README.md # Usage guide
+└── index.html # Main application page
 
 
-## Các công nghệ sử dụng
+## Technologies Used
 
-- **HTML5**: Cấu trúc trang web và hiển thị nội dung.
-- **CSS3**: Tạo kiểu và định dạng cho giao diện người dùng.
-- **JavaScript**: Thêm tính năng và logic cho ứng dụng.
-- **Marked.js**: Thư viện xử lý Markdown.
-- **FontAwesome**: Sử dụng biểu tượng từ FontAwesome để trang trí giao diện.
+- **HTML5**: Structure and display content on the web page.
+- **CSS3**: Style and format the user interface.
+- **JavaScript**: Add functionality and logic to the application.
+- **Marked.js**: Library for processing Markdown.
+- **FontAwesome**: Use icons from FontAwesome to enhance the UI.
 
-## Liên hệ
+## Contact
 
-- **YouTube**: [Kênh YouTube của Bill The Dev](https://www.youtube.com/channel/UCdRe_4FG7JhOERlfcyeNhnw)
-- **Facebook**: [Trang Facebook của Bill The Dev](https://www.facebook.com/billthedev)
-- **GitHub**: [Kho GitHub của Bill The Dev](https://github.com/billthedev)
-- **LinkedIn**: [Hồ sơ LinkedIn của Bill The Dev](https://www.linkedin.com/in/billthedev)
-- **Skype**: [Liên hệ qua Skype](https://www.skype.com/billthedev)
+- **YouTube**: [Bill The Dev's YouTube Channel](https://www.youtube.com/channel/UCdRe_4FG7JhOERlfcyeNhnw)
+- **Facebook**: [Bill The Dev's Facebook Page](https://www.facebook.com/billthedev)
+- **GitHub**: [Bill The Dev's GitHub Repository](https://github.com/billthedev)
+- **LinkedIn**: [Bill The Dev's LinkedIn Profile](https://www.linkedin.com/in/billthedev)
+- **Skype**: [Contact via Skype](https://www.skype.com/billthedev)
 
-Cảm ơn bạn đã sử dụng Bocchi The Rock Gemini Chat Bot! Hãy thưởng thức và chia sẻ với bạn bè!
+Thank you for using Bill Gemini Chat Bot! Enjoy and share with your friends!
 
-<p style="text-align: center; font-size: 2em; font-weight: bold; color: #FFA500; text-shadow: 2px 2px 4px #555555, 4px 4px 8px #AAAAAA;">
+<p align="center" style="font-size: 2em; font-weight: bold; color: #FFA500; text-shadow: 2px 2px 4px #000, 4px 2px 2px #AAAAAA; border: 3px solid #444; background-color: #111">
   Bill The Dev
 </p>
 
-<p style="text-align: center;">
-  <img src="hitori.png" alt="Hitori" >
+<p align="center">
+  <img src="hitori.png" alt="Hitori">
 </p>
